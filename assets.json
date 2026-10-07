@@ -1,0 +1,40 @@
+{
+  "android_mcp": {
+    "version": "1.12.0",
+    "url": "https://github.com/danielealbano/android-remote-control-mcp/releases/download/v1.12.0/android-remote-control-mcp-v1.12.0-foss-release.apk",
+    "algorithm": "sha256",
+    "checksum": "dd7f1d8997547f1ed04e91a0f32ef97a6e00ad26fb43eb7e5b1cb035e22316f3",
+    "minimum_sdk": 33
+  },
+  "platform_tools_macos": {
+    "version": "37.0.1",
+    "url": "https://dl.google.com/android/repository/platform-tools_r37.0.1-darwin.zip",
+    "algorithm": "sha1",
+    "checksum": "6ae73f4de6452dc57e62ec02b68eed92a4c21661",
+    "checksum_source": "https://dl.google.com/android/repository/repository2-1.xml"
+  },
+  "python_macos_arm64": {
+    "version": "3.12.13",
+    "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260718/cpython-3.12.13%2B20260718-aarch64-apple-darwin-install_only.tar.gz",
+    "algorithm": "sha256",
+    "checksum": "62aeee6161d57303a71a138b75fd5cc6fb8c89c4b1d9c7f0a052d89fa0b6652b"
+  },
+  "python_macos_x86_64": {
+    "version": "3.12.13",
+    "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260718/cpython-3.12.13%2B20260718-x86_64-apple-darwin-install_only.tar.gz",
+    "algorithm": "sha256",
+    "checksum": "10b47148de86f9d87ba6e96a3db606ced90a206a3454d7d6d8fa68536a05d81f"
+  },
+  "codex_macos_arm64": {
+    "version": "0.144.1",
+    "url": "https://github.com/openai/codex/releases/download/rust-v0.144.1/codex-aarch64-apple-darwin.tar.gz",
+    "algorithm": "sha256",
+    "checksum": "88e72ac8bd30815f7d18e62dac333dc20ce3ad1cba94be1649a1977dd9bfdbb8"
+  },
+  "codex_macos_x86_64": {
+    "version": "0.144.1",
+    "url": "https://github.com/openai/codex/releases/download/rust-v0.144.1/codex-x86_64-apple-darwin.tar.gz",
+    "algorithm": "sha256",
+    "checksum": "0ea72d21c794504342d5fe0d5d057b0221c0a42f4bdf4a48b95af243af2b0c0e"
+  }
+}

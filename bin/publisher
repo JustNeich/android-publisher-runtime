@@ -1,0 +1,18 @@
+#!/bin/sh
+set -eu
+runtime_root=${ANDROID_PUBLISHER_RUNTIME:-"$HOME/Library/Application Support/AndroidPublisher/runtime"}
+active="$runtime_root/active.json"
+if [ ! -f "$active" ]; then
+    echo 'Android Publisher runtime is not installed. Codex: run install.sh from this plugin, then reconnect its MCP.' >&2
+    exit 78
+fi
+python=$(/usr/bin/plutil -extract python raw -o - "$active")
+app=$(/usr/bin/plutil -extract app raw -o - "$active")
+data=$(/usr/bin/plutil -extract data raw -o - "$active")
+export PYTHONPATH="$app" ANDROID_PUBLISHER_DATA="$data" PYTHONDONTWRITEBYTECODE=1
+cd "$app"
+if [ "${1:-}" = mcp ]; then
+    shift
+    exec "$python" -m publisher.admin --root "$app" "$@"
+fi
+exec "$python" -m publisher.cli --root "$app" "$@"
